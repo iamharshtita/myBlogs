@@ -10,7 +10,7 @@ const app=express();
 //connect to MongoDB
 const dbURI='mongodb+srv://harshtita01:test12012001@cluster0.mxck5.mongodb.net/blogs_db?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
-    .then((result)=> app.listen(process.env.Port || 3000))
+    .then((result)=> app.listen(process.env.PORT || 3000))
     .catch((err)=> console.log(err))
 
 
